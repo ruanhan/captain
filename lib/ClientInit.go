@@ -10,7 +10,7 @@ var K8sClient *kubernetes.Clientset
 
 func init() {
 	config := &rest.Config{
-		Host: "http://101.43.2.58:8009",
+		Host: "http://127.0.0.1:8009",
 	}
 	c, err := kubernetes.NewForConfig(config)
 	if err != nil {
